@@ -9,39 +9,38 @@
   Konversi satuan Massa berarti mengubah suatu bentuk satuan massa ke satuan massa lainnya. 
   satuan massa yang bisa digunakan pada aplikasi yaitu : kg, g, ton, kwintal, ons.
 
-![massa](https://user-images.githubusercontent.com/89146841/130372190-0c634f41-1285-4a48-9eb7-2a6454271c90.jpg)
+![massa](https://user-images.githubusercontent.com/89146841/130405204-74a8b5c9-526d-42cd-8af6-f67edc210b46.jpg)
 
  ### 2.Konversi Satuan Suhu
   Konversi satuan suhu berarti mengubah suatu bentuk satuan suhu ke satuan suhu lainnya. 
   satuan suhu yang bisa digunakan pada aplikasi yaitu : Celcius, Fahrenheit, Kelvin, Reamur
   
- ![suhu](https://user-images.githubusercontent.com/89146841/130372194-dd1bd66f-4ab1-4b67-b1d9-e0a3eb869742.jpg)
+ ![suhu](https://user-images.githubusercontent.com/89146841/130405537-1088fdf5-47f8-4c4c-a75f-6d4fe4624764.jpg)
  
  ### 3.Konversi Satuan Waktu
   Konversi satuan Waktu berarti mengubah suatu bentuk satuan waktu ke satuan waktu lainnya. 
   satuan waktu yang bisa digunakan pada aplikasi yaitu : Menit, Detik, Jam, Hari.
 
-![waktu](https://user-images.githubusercontent.com/89146841/130372211-6b9212ef-7717-4547-ac19-449bba277d4f.jpg)
+![waktu](https://user-images.githubusercontent.com/89146841/130405647-e52b51c4-6f08-410b-b658-2f91f0d2a0e0.jpg)
 
  ### 4.Konversi Satuan Data
   Konversi satuan Data berarti mengubah suatu bentuk satuan Data ke satuan Data lainnya. 
   satuan data yang bisa digunakan pada aplikasi yaitu : GB, MB, KB, Byte.
 
-![data](https://user-images.githubusercontent.com/89146841/130372304-6086a67b-c88e-4600-a4fb-43b9ad376af6.jpg)
+![data](https://user-images.githubusercontent.com/89146841/130405630-3f8185f4-3251-4356-9ec1-2f3fce575759.jpg)
 
  ### 5.Konversi Satuan Decimal
   Konversi satuan Decimal berarti mengubah suatu bentuk satuan Decimal ke sistem Bilangan lainnya. 
   Sistem Bilangan yang bisa digunakan pada aplikasi yaitu : Decimal, Binary, Octal, Hexadecimal.
 
-![decimal](https://user-images.githubusercontent.com/89146841/130372219-b84053ca-e76d-4279-a71f-f420dafaca8c.jpg)
+![decimal](https://user-images.githubusercontent.com/89146841/130405578-b46009ad-6ffd-47c0-8a48-de57ed9b5f95.jpg)
 
 
  ### 6.Konversi Satuan Panjang
   Konversi satuan Panjang berarti mengubah suatu bentuk satuan Panjang ke satuan Panjang lainnya. 
   satuan Panjang yang bisa digunakan pada aplikasi yaitu : Mil, Km, Yard, Meter.
 
-![panjang](https://user-images.githubusercontent.com/89146841/130372310-9f33611a-8631-4f53-ab88-63af732cd867.jpg)
-
+![panjang](https://user-images.githubusercontent.com/89146841/130405665-830098a6-1bc8-4e14-8743-22d6e130f8ac.jpg)
 
 ## Anggota Kelompok 
 1. Muhammad Rizki
