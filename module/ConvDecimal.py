@@ -18,7 +18,10 @@ class NumberSysConverter:
 
     def bintobin(self, val):
         return val
-
+    
+    def octtooct(self, val):
+        return val
+    
     def destobin(self, val):
         self.__hasil = "{0:b}".format(int(val))
         return self.__hasil
@@ -83,4 +86,20 @@ class NumberSysConverter:
             self.__hasil += self.__remainder * self.__count
             self.__count *= 10
             self.__sementara //= 8
+        return self.__hasil
+    
+    # Fungsi Octal To Decimal
+    def octtodec(self,val):
+        return int(val,8)
+    
+    #Fungsi Octal To Biner
+    def octtobin(self,val):
+        self.__sementara = int(val,8)
+        self.__hasil = bin(self.__sementara)
+        return self.__hasil[2:]
+    
+    #Fungsi Octal To Heksadesimal
+    def octtohex(self,val):
+        self.__sementara = int(val,8)
+        self.__hasil = "{0:X}".format(int(self.__sementara))
         return self.__hasil
