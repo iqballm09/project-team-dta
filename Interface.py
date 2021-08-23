@@ -3,8 +3,9 @@ PROGRAM GUI APLIKASI
 Created By : Nurkholilah Harahap
 """
 
+import string
 import tkinter as tk
-from tkinter import ttk, Tk
+from tkinter import ttk, Tk, messagebox
 # from module.ConvArea import AreaConverter
 from module.ConvByte import ByteConverter
 from module.ConvNumSys import NumberSysConverter
@@ -96,6 +97,7 @@ def massa_tab(tab_frame):
     combo1.grid(column=2, row=1)
 
     # List of Functions
+
     def btnClick(numbers):
         global string1
         string1 += str(numbers)
@@ -121,6 +123,17 @@ def massa_tab(tab_frame):
                      "gton": obj.gtoton(), "gkwintal": obj.gtokwintal(), "gkg": obj.gtokg(), "gons": obj.gtoons(), "gg": obj.gtog()}
         result1 = dict_mass[selected]
         text_output.set(result1)
+
+    def clicked():
+        try:
+            assert text_input.get().count(".") == 1 or text_input.get().isdigit()
+            btnEqualsInput()
+        except:
+            if "," in text_input.get():
+                messagebox.showerror("Error", "Please Use '.' instead ','")
+            else:
+                messagebox.showerror("Error", "Please input number only!")
+            text_input.set("")
 
     def button_delete():
         global string1
@@ -167,7 +180,7 @@ def massa_tab(tab_frame):
     point = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
                       text='.', bg='powder blue', command=lambda: btnClick(".")).grid(row=6, column=1, sticky="nsew")
     btnEquals = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
-                          text='=', bg='powder blue', command=btnEqualsInput).grid(row=6, columnspan=2, column=2, sticky="nsew")
+                          text='=', bg='powder blue', command=clicked).grid(row=6, columnspan=2, column=2, sticky="nsew")
 
     return tab
 
@@ -232,6 +245,17 @@ def temp_tab(tab_frame):
         result2 = dict_mass[selected]
         text_output.set(result2)
 
+    def clicked():
+        try:
+            assert text_input.get().count(".") == 1 or text_input.get().isdigit()
+            btnEqualsInput()
+        except:
+            if "," in text_input.get():
+                messagebox.showerror("Error", "Please Use '.' instead ','")
+            else:
+                messagebox.showerror("Error", "Please input number only!")
+            text_input.set("")
+
     def button_delete():
         global string2
         text = string2[:-1]
@@ -277,7 +301,7 @@ def temp_tab(tab_frame):
     point = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
                       text='.', bg='powder blue', command=lambda: btnClick(".")).grid(row=6, column=1, sticky="nsew")
     btnEquals = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
-                          text='=', bg='powder blue', command=btnEqualsInput).grid(row=6, columnspan=2, column=2, sticky="nsew")
+                          text='=', bg='powder blue', command=lambda: clicked).grid(row=6, columnspan=2, column=2, sticky="nsew")
     return tab
 
 # 3. Tab untuk waktu
@@ -341,6 +365,17 @@ def time_tab(tab_frame):
         result3 = dict_mass[selected]
         text_output.set(result3)
 
+    def clicked():
+        try:
+            assert text_input.get().count(".") == 1 or text_input.get().isdigit()
+            btnEqualsInput()
+        except:
+            if "," in text_input.get():
+                messagebox.showerror("Error", "Please Use '.' instead ','")
+            else:
+                messagebox.showerror("Error", "Please input number only!")
+            text_input.set("")
+
     def button_delete():
         global string3
         text = string3[:-1]
@@ -386,7 +421,7 @@ def time_tab(tab_frame):
     point = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
                       text='.', bg='powder blue', command=lambda: btnClick(".")).grid(row=6, column=1, sticky="nsew")
     btnEquals = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
-                          text='=', bg='powder blue', command=btnEqualsInput).grid(row=6, columnspan=2, column=2, sticky="nsew")
+                          text='=', bg='powder blue', command=clicked).grid(row=6, columnspan=2, column=2, sticky="nsew")
     return tab
 
 # 4. Tab untuk Data
@@ -450,6 +485,17 @@ def byte_tab(tab_frame):
         result4 = dict_mass[selected]
         text_output.set(result4)
 
+    def clicked():
+        try:
+            assert text_input.get().count(".") == 1 or text_input.get().isdigit()
+            btnEqualsInput()
+        except:
+            if "," in text_input.get():
+                messagebox.showerror("Error", "Please Use '.' instead ','")
+            else:
+                messagebox.showerror("Error", "Please input number only!")
+            text_input.set("")
+
     def button_delete():
         global string4
         text = string4[:-1]
@@ -495,7 +541,7 @@ def byte_tab(tab_frame):
     point = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
                       text='.', bg='powder blue', command=lambda: btnClick(".")).grid(row=6, column=1, sticky="nsew")
     btnEquals = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
-                          text='=', bg='powder blue', command=btnEqualsInput).grid(row=6, columnspan=2, column=2, sticky="nsew")
+                          text='=', bg='powder blue', command=clicked).grid(row=6, columnspan=2, column=2, sticky="nsew")
     return tab
 
 # 5. Tab untuk Decimal
@@ -557,6 +603,22 @@ def dec_tab(tab_frame):
             obj = NumberSysConverter()
             result5 = obj.selectFunc(text_input.get(), selected)
         text_output.set(result5)
+
+    def clicked():
+
+        cond1 = text_input.get().count(".") == 1
+        cond2 = text_input.get().isdigit()
+        cond3 = all(c in string.hexdigits for c in text_input.get())
+        try:
+            assert cond1 or cond2 or cond3
+            btnEqualsInput()
+        except:
+            if "," in text_input.get():
+                messagebox.showerror("Error", "Please Use '.' instead ','")
+            else:
+                messagebox.showerror(
+                    "Error", "Please input decimal, binary, hexadecimal or octal instead!")
+            text_input.set("")
 
     def button_delete():
         global string5
@@ -620,7 +682,7 @@ def dec_tab(tab_frame):
     btnf = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
                      text='f', bg='powder blue', command=lambda: btnClick("f")).grid(row=7, column=3, sticky="nsew")
     btnEquals = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
-                          text='=', bg='powder blue', command=btnEqualsInput).grid(row=8, columnspan=4, column=0, sticky="nsew")
+                          text='=', bg='powder blue', command=clicked).grid(row=8, columnspan=4, column=0, sticky="nsew")
     return tab
 
 # 6. Tab untuk Panjang
@@ -684,6 +746,17 @@ def length_tab(tab_frame):
         result6 = dict_mass[selected]
         text_output.set(result6)
 
+    def clicked():
+        try:
+            assert text_input.get().count(".") == 1 or text_input.get().isdigit()
+            btnEqualsInput()
+        except:
+            if "," in text_input.get():
+                messagebox.showerror("Error", "Please Use '.' instead ','")
+            else:
+                messagebox.showerror("Error", "Please input number only!")
+            text_input.set("")
+
     def button_delete():
         global string6
         text = string6[:-1]
@@ -729,7 +802,7 @@ def length_tab(tab_frame):
     point = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
                       text='.', bg='powder blue', command=lambda: btnClick(".")).grid(row=6, column=1, sticky="nsew")
     btnEquals = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
-                          text='=', bg='powder blue', command=btnEqualsInput).grid(row=6, columnspan=2, column=2, sticky="nsew")
+                          text='=', bg='powder blue', command=clicked).grid(row=6, columnspan=2, column=2, sticky="nsew")
     return tab
 
 
