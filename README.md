@@ -1,4 +1,10 @@
 # project-team-dta
+## Anggota Kelompok 
+1. Muhammad Rizki
+2. M. Iqbal
+3. Nurkholilah Harahap
+4. Nurul Azizah
+
 ## Deskripsi 
   Project Team DTA tentang aplikasi konversi satuan.
   Konversi satuan memiliki arti, mengubah nilai suatu sistem satuan ke nilai satuan lain.
@@ -42,10 +48,5 @@
 
 ![panjang](https://user-images.githubusercontent.com/89146841/130405665-830098a6-1bc8-4e14-8743-22d6e130f8ac.jpg)
 
-## Anggota Kelompok 
-1. Muhammad Rizki
-2. M. Iqbal
-3. Nurkholilah Harahap
-4. Nurul Azizah
-#### Note : Semua file disimpan di module ya kecuali Interface sama Main Program.
 
+#### Note : Semua file disimpan di module ya kecuali Interface sama Main Program.
