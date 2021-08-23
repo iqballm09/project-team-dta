@@ -508,7 +508,7 @@ def dec_tab(tab_frame):
     text_output = tk.StringVar()
     combo_input = tk.StringVar()
     combo1_input = tk.StringVar()
-    set_satuan1 = ("Decimal", "Binary", "Hexa")
+    set_satuan1 = ("Decimal", "Binary", "Hexa", "Octal")
     set_satuan2 = ("Decimal", "Binary", "Octal", "Hexa")
 
     text_display_inp = tk.Entry(tab, font=("sans-serif", 16, "bold"), textvariable=text_input,
@@ -553,7 +553,8 @@ def dec_tab(tab_frame):
         inp = text_input.get()
         dict_mass = {"DecimalDecimal": obj.destodes(int(inp)), "DecimalBinary": obj.destobin(int(inp)), "DecimalOctal": obj.destookt(int(inp)), "DecimalHexa": obj.destohex(inp),
                      "BinaryDecimal": obj.bintodes(inp), "BinaryBinary": obj.bintobin(inp), "BinaryOctal": obj.bintooct(inp), "BinaryHexa": obj.bintohex(inp),
-                     "HexaDecimal": obj.hextodes(inp), "HexaBinary": obj.hextobin(inp), "HexaOctal": obj.hextooct(inp), "HexaHexa": obj.hextohex(inp)}
+                     "HexaDecimal": obj.hextodes(inp), "HexaBinary": obj.hextobin(inp), "HexaOctal": obj.hextooct(inp), "HexaHexa": obj.hextohex(inp)
+                     "OctalOctal": obj.octtooct(inp),"OctalBinary":obj.octtobin(inp),"OctalDecimal":obj.octtodec(inp),"OctalHexa": obj.octtohex(inp)}
         result5 = dict_mass[selected]
         text_output.set(result5)
 
