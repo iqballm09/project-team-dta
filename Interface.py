@@ -553,7 +553,7 @@ def dec_tab(tab_frame):
         inp = text_input.get()
         dict_mass = {"DecimalDecimal": obj.destodes(int(inp)), "DecimalBinary": obj.destobin(int(inp)), "DecimalOctal": obj.destookt(int(inp)), "DecimalHexa": obj.destohex(inp),
                      "BinaryDecimal": obj.bintodes(inp), "BinaryBinary": obj.bintobin(inp), "BinaryOctal": obj.bintooct(inp), "BinaryHexa": obj.bintohex(inp),
-                     "HexaDecimal": obj.hextodes(inp), "HexaBinary": obj.hextobin(inp), "HexaOctal": obj.hextooct(inp), "HexaHexa": obj.hextohex(inp)
+                     "HexaDecimal": obj.hextodes(inp), "HexaBinary": obj.hextobin(inp), "HexaOctal": obj.hextooct(inp), "HexaHexa": obj.hextohex(inp),
                      "OctalOctal": obj.octtooct(inp),"OctalBinary":obj.octtobin(inp),"OctalDecimal":obj.octtodec(inp),"OctalHexa": obj.octtohex(inp)}
         result5 = dict_mass[selected]
         text_output.set(result5)
