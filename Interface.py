@@ -116,9 +116,9 @@ def massa_tab(tab_frame):
             obj = MassConverter(float(text_input.get()))
         dict_mass = {"tonton": obj.tontoton(), "tonkwintal": obj.tontokwintal(), "tonkg": obj.tontokg(), "tonons": obj.tontoons(), "tong": obj.tontog(),
                      "kwintalton": obj.kwintaltoton(), "kwintalkwintal": obj.kwintaltokwintal(), "kwintalkg": obj.kwintaltokg(), "kwintalons": obj.kwintaltoons(), "kwintalg": obj.kwintaltog(),
-                     "kgton": obj.kgtoton(), "kgkwintal": obj.kgtokwintal(), "kgkg": obj.kgtokg(), "kgons": obj.kgtoons(), "kgg": obj.kgtoons(),
+                     "kgton": obj.kgtoton(), "kgkwintal": obj.kgtokwintal(), "kgkg": obj.kgtokg(), "kgons": obj.kgtoons(), "kgg": obj.kgtog(),
                      "onston": obj.onstoton(), "onskwintal": obj.onskwintal(), "onskg": obj.onstokg(), "onsons": obj.onstoons(), "onsg": obj.onstog(),
-                     "gton": obj.gtoton(), "gkwintal": obj.gtokwintal(), "gkg": obj.gtokg, "gons": obj.gtoons(), "gg": obj.gtog()}
+                     "gton": obj.gtoton(), "gkwintal": obj.gtokwintal(), "gkg": obj.gtokg(), "gons": obj.gtoons(), "gg": obj.gtog()}
         result1 = dict_mass[selected]
         text_output.set(result1)
 
