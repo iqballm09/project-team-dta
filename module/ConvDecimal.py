@@ -46,7 +46,7 @@ class NumberSysConverter:
 
     # Fungsi Biner To Octal
     def bintooct(self, val):
-        self.__sementara = int(str(self.__input, val), 2)
+        self.__sementara = int(str(val), 2)
         self.__hasil = 0
         self.__count = 1
         while (self.__sementara != 0):
