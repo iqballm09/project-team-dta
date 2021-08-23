@@ -30,8 +30,8 @@
 ![data](https://user-images.githubusercontent.com/89146841/130372304-6086a67b-c88e-4600-a4fb-43b9ad376af6.jpg)
 
  ### 5.Konversi Satuan Decimal
-  Konversi satuan Decimal berarti mengubah suatu bentuk satuan Decimal ke satuan Decimal lainnya. 
-  satuan decimal yang bisa digunakan pada aplikasi yaitu : Decimal, Binary, Octal, Hexa.
+  Konversi satuan Decimal berarti mengubah suatu bentuk satuan Decimal ke sistem Bilangan lainnya. 
+  Sistem Bilangan yang bisa digunakan pada aplikasi yaitu : Decimal, Binary, Octal, Hexadecimal.
 
 ![decimal](https://user-images.githubusercontent.com/89146841/130372219-b84053ca-e76d-4279-a71f-f420dafaca8c.jpg)
 
