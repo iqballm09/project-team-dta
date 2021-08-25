@@ -205,7 +205,7 @@ def temp_tab(tab_frame):
         tab,
         values=set_satuan,
         textvariable=combo_input,
-        state='readonly',
+        state='readonly'
     )
     combo.current(0)  # set the selected item
     combo.grid(column=2, row=0)
@@ -238,10 +238,10 @@ def temp_tab(tab_frame):
             obj = TemperatureConverter(int(text_input.get()))
         else:
             obj = TemperatureConverter(float(text_input.get()))
-        dict_mass = {"CelciusCelcius": text_input.get(), "CelciusFahrenheit": obj.celtofah(), "CelciusKelvin": obj.celtokel(), "CelciusReamur": obj.celtoream(),
-                     "ReamurReamur": text_input.get(), "ReamurCelcius": obj.reamtocel(), "ReamurFahrenheit": obj.reamtofah(), "ReamurKelvin": obj.reamtokel(),
-                     "FahrenheitFahrenheit": text_input.get(), "FahrenheitCelcius": obj.fahtocel(), "FahrenheitReamur": obj.fahtoream(), "FahrenheitKelvin": obj.fahtokel(),
-                     "KelvinKelvin": text_input.get(), "KelvinCelcius": obj.keltocel(), "KelvinReamur": obj.keltoream(), "KelvinFahrenheit": obj.keltofah()}
+        dict_mass = {"CelciusCelcius": obj.celtocel(), "CelciusFahrenheit": obj.celtofah(), "CelciusKelvin": obj.celtokel(), "CelciusReamur": obj.celtoream(),
+                     "ReamurReamur": obj.reamtoream(), "ReamurCelcius": obj.reamtocel(), "ReamurFahrenheit": obj.reamtofah(), "ReamurKelvin": obj.reamtokel(),
+                     "FahrenheitFahrenheit": obj.fahtofah(), "FahrenheitCelcius": obj.fahtocel(), "FahrenheitReamur": obj.fahtoream(), "FahrenheitKelvin": obj.fahtokel(),
+                     "KelvinKelvin": obj.keltokel(), "KelvinCelcius": obj.keltocel(), "KelvinReamur": obj.keltoream(), "KelvinFahrenheit": obj.keltofah()}
         result2 = dict_mass[selected]
         text_output.set(result2)
 
@@ -301,7 +301,7 @@ def temp_tab(tab_frame):
     point = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
                       text='.', bg='powder blue', command=lambda: btnClick(".")).grid(row=6, column=1, sticky="nsew")
     btnEquals = tk.Button(tab, padx=5, bd=8, fg="black", font=('arial', 20, 'bold'),
-                          text='=', bg='powder blue', command=lambda: clicked).grid(row=6, columnspan=2, column=2, sticky="nsew")
+                          text='=', bg='powder blue', command=clicked).grid(row=6, columnspan=2, column=2, sticky="nsew")
     return tab
 
 # 3. Tab untuk waktu

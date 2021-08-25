@@ -8,6 +8,18 @@ class TemperatureConverter:
     def __init__(self, val):
         self.__nilai = val
 
+    def celtocel(self):
+        return self.__nilai
+
+    def reamtoream(self):
+        return self.__nilai
+
+    def fahtofah(self):
+        return self.__nilai
+
+    def keltokel(self):
+        return self.__nilai
+
     # FUNGSI Celcius to Reamur
     def celtoream(self):
         return (4.0 / 5 * self.__nilai)
